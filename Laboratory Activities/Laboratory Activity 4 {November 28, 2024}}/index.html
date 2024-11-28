@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Raleway:wght@300;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="quote-container"></div> <!-- Quote container stays at the top -->
     <div class="container">
         <!-- Profile Card -->
         <div class="box profile-card">
@@ -28,22 +29,24 @@
 
         <!-- Intro Card -->
         <div class="box intro-card">
-            <img src="assets/hello.gif">
+            <img src="assets/hello.gif" alt="Hello GIF">
             <a href="https://github.com/oocim" class="btn" target="_blank">View My GitHub</a>
         </div>
 
-        <!-- Hobbies and Contact Card -->
+        <!-- Hobbies Card -->
         <div class="box hobbies-card">
             <h2>About Me</h2>
             <p>3rd Year Computer Science Student</p>
             <p>Batangas State University</p>
             <h3>Hobbies</h3>
-            <ul>
-                <li><img src="assets/gaming.png" alt="Gaming Icon"> Gaming</li>
-                <li><img src="assets/programming.png" alt="Programming Icon"> Programming</li>
-                <li><img src="assets/gym.png" alt="Gym Icon"> Working Out</li>
+            <ul id="hobbies-list">
+                <li class="hobby-item"><img src="assets/gaming.png" alt="Gaming Icon"> Gaming</li>
+                <li class="hobby-item"><img src="assets/programming.png" alt="Programming Icon"> Programming</li>
+                <li class="hobby-item"><img src="assets/gym.png" alt="Gym Icon"> Working Out</li>
             </ul>
         </div>
     </div>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
