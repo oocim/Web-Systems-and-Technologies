@@ -56,7 +56,7 @@ body {
     height: 120px;
     border-radius: 50%;
     background-color: #BBE1FA;
-    background-image: url('profile.jpg');
+    background-image: url('assets/profile.jpg');
     background-size: cover;
     background-position: center;
     margin-bottom: 20px;
