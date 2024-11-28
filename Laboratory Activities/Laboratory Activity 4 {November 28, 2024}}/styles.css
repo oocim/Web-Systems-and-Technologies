@@ -1,0 +1,178 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle, #0f2975, #1B262C, #000000);
+    color: #BBE1FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Box Styles */
+.box {
+    flex: 1 1 300px;
+    max-width: 360px;
+    height: 420px;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #0F4C75;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect */
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Profile Card */
+.profile-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #BBE1FA;
+    background-image: url('profile.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+.profile-card h1 {
+    font-size: 1.8rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    margin: 0 8px;
+}
+
+.social-links img {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.2s;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
+
+/* Intro Card */
+.intro-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin: 20px auto;
+}
+
+.intro-card .btn {
+    background-color: #000000;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.intro-card .btn:hover {
+    background-color: #1a1a1a;
+}
+
+/* Hobbies Card */
+.hobbies-card h2,
+.hobbies-card h3 {
+    font-family: 'Dancing Script', cursive;
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.hobbies-card h2 {
+    font-size: 2rem;
+}
+
+.hobbies-card h3 {
+    font-size: 1.6rem;
+}
+
+.hobbies-card ul {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.hobbies-card ul li {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.hobbies-card ul img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box {
+        flex: 1 1 90%;
+    }
+
+    .profile-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .social-links img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .intro-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .intro-card .btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+
+    .hobbies-card h2 {
+        font-size: 1.6rem;
+    }
+
+    .hobbies-card h3 {
+        font-size: 1.4rem;
+    }
+}
